@@ -1,0 +1,53 @@
+configurar um nome de usuario => 
+git config --global user.name "Nome de Usuario"
+
+configurar um e-mail de usuario =>
+git config --global user.email "E-mail do Usuario"
+
+informações do usuario =>
+git config --list
+
+inicializar repositório =>
+1° => entrar na pasta;
+2° => git init
+
+status do repositorio =>
+git status
+
+adicionar arquivo =>
+git add nome_do_arquivo.extensão
+
+criar um commit (uma versão) =>
+git commit -m "mensagem"
+git commit -am "mensagem" => adicionar e commitar um arquivo ja existente
+mensagem =>
+alguma informação do que foi alterado naquela versão
+
+informações das versoes =>
+git log => algumas informações
+git log --decorate => informações mais detalhadas
+git log --author="NomeDoAutor" => filtrar modificações por autor
+git log --graph => commits em forma grafica
+
+verificar autores e suas contribuições =>
+git shortlog
+git shortlog -sn => nome do autor e numero de commits
+
+veririficar oque foi alterado =>
+git show HashDaVersão
+
+ver as mudanças antes de dar commit =>
+git diff
+git diff --name-only => ver somente o nome do arquivo modificado
+
+desfazer mudanças antes do arquivo ser adicionado =>
+git checkout NomeDoArquivo
+
+desfazer mudanças depois que o arquivo ja foi adicionado =>
+git reset HEAD NomeDoArquivo
+git reset --soft HashDoCommit =>
+reseta o commit e deixa o arquivo ja adicionada para commitar
+git reset --mixed HashDoCommit =>
+reseta o commit e deixa ele pronto pra ser adicionado
+git reset --hard HashDoCommit =>
+reseta por completo o commit até o selecionado
