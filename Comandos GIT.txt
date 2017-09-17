@@ -54,3 +54,6 @@ reseta por completo o commit até o selecionado
 
 ligar o git a um repositorio remoto do github =>
 git remote add origin LinkDoRepositorio
+
+enviar os arquivos para o repositorio remoto =>
+git push origin master
