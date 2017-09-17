@@ -51,3 +51,6 @@ git reset --mixed HashDoCommit =>
 reseta o commit e deixa ele pronto pra ser adicionado
 git reset --hard HashDoCommit =>
 reseta por completo o commit até o selecionado
+
+ligar o git a um repositorio remoto do github =>
+git remote add origin LinkDoRepositorio
